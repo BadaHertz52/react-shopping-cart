@@ -22,7 +22,6 @@
     /* Testing */
     "types": ["vite-plugin-svgr/client", "vite/client"],
     "esModuleInterop": true,
-
     "baseUrl": "src",
     "paths": {
       "@components/*": ["components/*"],
