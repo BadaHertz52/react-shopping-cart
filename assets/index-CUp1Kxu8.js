@@ -241,7 +241,7 @@ Error generating stack: `+i.message+`
   font-weight: 700;
   font-size: 24px;
   line-height: 34px;
-`,NN=O.lazy(()=>CN(()=>import("./ShoppingCartContent-BkOzGHVH.js"),[])),AN=()=>{const e=Vi(sd),t=Vi(ud),n=e.length===0||t.length===0,r=os();return ee.jsxs(ee.Fragment,{children:[ee.jsx(LN,{children:"장바구니"}),ee.jsx(kN,{FallbackComponent:({error:o})=>ee.jsx(Ag,{$height:"70vh",error:o,reload:!0}),children:ee.jsx(O.Suspense,{fallback:ee.jsx(Ng,{$width:"100%",$height:"70vh"}),children:ee.jsx(NN,{})})}),ee.jsx(fg,{onClick:()=>r(vc.confirm),disabled:n,children:"주문 확인"})]})},PN=G_([{path:"/",element:ee.jsx(vR,{}),children:[{index:!0,element:ee.jsx(AN,{})},{path:"confirm",element:ee.jsx(_N,{})}],errorElement:ee.jsx(yR,{})}],{basename:"/react-shopping-cart"}),$N=Lw`
+`,NN=O.lazy(()=>CN(()=>import("./ShoppingCartContent-CmVCa_sJ.js"),[])),AN=()=>{const e=Vi(sd),t=Vi(ud),n=e.length===0||t.length===0,r=os();return ee.jsxs(ee.Fragment,{children:[ee.jsx(LN,{children:"장바구니"}),ee.jsx(kN,{FallbackComponent:({error:o})=>ee.jsx(Ag,{$height:"70vh",error:o,reload:!0}),children:ee.jsx(O.Suspense,{fallback:ee.jsx(Ng,{$width:"100%",$height:"70vh"}),children:ee.jsx(NN,{})})}),ee.jsx(fg,{onClick:()=>r(vc.confirm),disabled:n,children:"주문 확인"})]})},PN=G_([{path:"/",element:ee.jsx(vR,{}),children:[{index:!0,element:ee.jsx(AN,{})},{path:"confirm",element:ee.jsx(_N,{})}],errorElement:ee.jsx(yR,{})}],{basename:"/react-shopping-cart"}),$N=Lw`
   html,
   body,
   div,
