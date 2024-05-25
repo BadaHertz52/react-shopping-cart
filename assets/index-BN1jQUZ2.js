@@ -273,14 +273,14 @@ Error generating stack: `+s.message+`
   }
 `,tC=()=>{},O$=({text:e})=>H.jsx(F$,{children:e}),j$=({message:e,$textAlign:t="left"})=>{const n=e.split("/n");return H.jsx(H.Fragment,{children:n.map(o=>H.jsx(z$,{$textAlign:t,children:o}))})};tC.Contents=j$;tC.ConfirmButton=O$;const nC=xe.div`
   ${$x};
-  min-height: 100vh;
+  height: 100vh;
   margin: auto;
   background-color: ${et.white};
   -webkit-box-shadow: 0px 0px 27px -6px rgba(0, 0, 0, 0.46);
   box-shadow: 0px 0px 27px -6px rgba(0, 0, 0, 0.46);
 `,U$=xe.div`
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   // 24px: outlet 의 navigation, bottom 같의 padding값
   padding: calc(${bn.navigationHeight} + ${bn.layoutPadding}) ${bn.layoutPadding};
   box-sizing: border-box;
@@ -495,7 +495,7 @@ Error generating stack: `+h.message+`
 `,DF=xe.div`
   display: flex;
   margin-top: 21px;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 `,AF=xe.p`
   font-size: 14px;
   font-weight: 500;
@@ -529,7 +529,7 @@ Error generating stack: `+h.message+`
   margin-bottom: 32px;
 `,BF=xe.span`
   font-size: 18px;
-`,VF=()=>{const e=xi(),t=()=>{e(fi.root)};return H.jsxs(jF,{children:[H.jsx(gT,{}),H.jsx(UF,{children:"유효하지 않은 접근이에요."}),H.jsx(o0,{onClick:t,children:H.jsx(BF,{children:"장바구니 페이지 가기"})})]})},WF=()=>{const e=Yp(C0),t=un(xR),{totalSelectedItemLength:n,selectedTotalQuantity:o,selectedItems:i}=t8(),{getAvailableCoupons:s}=Kz(),{fetchError:c,orderCartItems:d}=e8(),p=xi(),m=i.length>0,v=async()=>{await d(),p(fi.purchaseConfirm,{state:{totalPrice:t,totalSelectedItemLength:n,selectedTotalQuantity:o}})};return G.useEffect(()=>{e(s())},[]),G.useEffect(()=>{if(c)throw c},[c]),H.jsx(rC,{pageTitle:"주문 확인",handleBottomBtnClick:v,bottomButtonDisable:!m,bottomButtonText:"결제하기",children:m?H.jsxs(H.Fragment,{children:[H.jsxs(vv,{children:[H.jsxs(vv.Row,{children:["총 ",n,"종류의 상품 ",o,"개를 주문합니다."]}),H.jsx(vv.Row,{children:"최종 결제 금액을 확인해주세요."})]}),H.jsx(OF,{selectedItems:i}),H.jsx(LF,{}),H.jsx(zF,{}),H.jsx($F,{})]}):H.jsx(VF,{})})},HF="modulepreload",KF=function(e){return"/react-shopping-cart/"+e},Ub={},GF=function(t,n,o){let i=Promise.resolve();if(n&&n.length>0){document.getElementsByTagName("link");const s=document.querySelector("meta[property=csp-nonce]"),c=(s==null?void 0:s.nonce)||(s==null?void 0:s.getAttribute("nonce"));i=Promise.all(n.map(d=>{if(d=KF(d),d in Ub)return;Ub[d]=!0;const p=d.endsWith(".css"),m=p?'[rel="stylesheet"]':"";if(document.querySelector(`link[href="${d}"]${m}`))return;const v=document.createElement("link");if(v.rel=p?"stylesheet":HF,p||(v.as="script",v.crossOrigin=""),v.href=d,c&&v.setAttribute("nonce",c),document.head.appendChild(v),p)return new Promise((g,S)=>{v.addEventListener("load",g),v.addEventListener("error",()=>S(new Error(`Unable to preload CSS for ${d}`)))})}))}return i.then(()=>t()).catch(s=>{const c=new Event("vite:preloadError",{cancelable:!0});if(c.payload=s,window.dispatchEvent(c),!c.defaultPrevented)throw s})},QF=G.lazy(()=>GF(()=>import("./ShoppingCartContent-CFo1kzr7.js"),[])),qF=()=>{const e=un(pc),t=un(rs),n=xi(),o=e.length===0||t.length===0,i=()=>{n(fi.orderConfirm)};return H.jsx(rC,{pageTitle:"장바구니",handleBottomBtnClick:i,bottomButtonDisable:o,bottomButtonText:"주문 확인",children:H.jsx(QF,{})})},ZF=xe.section`
+`,VF=()=>{const e=xi(),t=()=>{e(fi.root)};return H.jsxs(jF,{children:[H.jsx(gT,{}),H.jsx(UF,{children:"유효하지 않은 접근이에요."}),H.jsx(o0,{onClick:t,children:H.jsx(BF,{children:"장바구니 페이지 가기"})})]})},WF=()=>{const e=Yp(C0),t=un(xR),{totalSelectedItemLength:n,selectedTotalQuantity:o,selectedItems:i}=t8(),{getAvailableCoupons:s}=Kz(),{fetchError:c,orderCartItems:d}=e8(),p=xi(),m=i.length>0,v=async()=>{await d(),p(fi.purchaseConfirm,{state:{totalPrice:t,totalSelectedItemLength:n,selectedTotalQuantity:o}})};return G.useEffect(()=>{e(s())},[]),G.useEffect(()=>{if(c)throw c},[c]),H.jsx(rC,{pageTitle:"주문 확인",handleBottomBtnClick:v,bottomButtonDisable:!m,bottomButtonText:"결제하기",children:m?H.jsxs(H.Fragment,{children:[H.jsxs(vv,{children:[H.jsxs(vv.Row,{children:["총 ",n,"종류의 상품 ",o,"개를 주문합니다."]}),H.jsx(vv.Row,{children:"최종 결제 금액을 확인해주세요."})]}),H.jsx(OF,{selectedItems:i}),H.jsx(LF,{}),H.jsx(zF,{}),H.jsx($F,{})]}):H.jsx(VF,{})})},HF="modulepreload",KF=function(e){return"/react-shopping-cart/"+e},Ub={},GF=function(t,n,o){let i=Promise.resolve();if(n&&n.length>0){document.getElementsByTagName("link");const s=document.querySelector("meta[property=csp-nonce]"),c=(s==null?void 0:s.nonce)||(s==null?void 0:s.getAttribute("nonce"));i=Promise.all(n.map(d=>{if(d=KF(d),d in Ub)return;Ub[d]=!0;const p=d.endsWith(".css"),m=p?'[rel="stylesheet"]':"";if(document.querySelector(`link[href="${d}"]${m}`))return;const v=document.createElement("link");if(v.rel=p?"stylesheet":HF,p||(v.as="script",v.crossOrigin=""),v.href=d,c&&v.setAttribute("nonce",c),document.head.appendChild(v),p)return new Promise((g,S)=>{v.addEventListener("load",g),v.addEventListener("error",()=>S(new Error(`Unable to preload CSS for ${d}`)))})}))}return i.then(()=>t()).catch(s=>{const c=new Event("vite:preloadError",{cancelable:!0});if(c.payload=s,window.dispatchEvent(c),!c.defaultPrevented)throw s})},QF=G.lazy(()=>GF(()=>import("./ShoppingCartContent-CGc4NthD.js"),[])),qF=()=>{const e=un(pc),t=un(rs),n=xi(),o=e.length===0||t.length===0,i=()=>{n(fi.orderConfirm)};return H.jsx(rC,{pageTitle:"장바구니",handleBottomBtnClick:i,bottomButtonDisable:o,bottomButtonText:"주문 확인",children:H.jsx(QF,{})})},ZF=xe.section`
   margin-top: 20px;
   width: 100%;
   height: calc(100vh - ${bn.navigationHeight} - ${bn.bottomButtonHeight} - ${bn.layoutPadding}*2);
